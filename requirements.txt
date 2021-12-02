@@ -1,0 +1,14 @@
+Flask
+Flask-Bootstrap
+Jinja2
+MarkupSafe
+Werkzeug
+argparse
+certifi
+chardet
+click
+dominate
+idna
+itsdangerous
+requests
+urllib3
