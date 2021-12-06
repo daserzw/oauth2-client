@@ -15,5 +15,8 @@ __pycache__
 # Python egg
 *.egg-info
 
-#venv
+# pychache
+__pycache__
+
+# venv
 venv

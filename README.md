@@ -17,7 +17,8 @@ In order to use this simple client, open config.py and setup:
 We strongly reccomend to use virtualenv to set up the python environment to run the Flask app:
 
 ```
-virtualenv venv
+cd oauth2-client
+python3 -mvenv venv
 ```
 Activate the virtualenv
 ```

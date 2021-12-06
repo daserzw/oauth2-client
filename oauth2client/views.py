@@ -4,6 +4,10 @@ from flask import render_template, url_for, redirect, session, request, Response
 
 @app.route('/')
 def index():
+    if (app.config['AS_AUTH_URL'] == '' or app.config['AS_TOKEN_URL'] == '' or
+        app.config['CLIENT_ID'] == '' or app.config['CLIENT_SECRET'] == ''):
+        return render_template('error.html')
+    
     state = hashlib.sha256(str(random.random()).encode('utf-8')).hexdigest()
     session['state'] = state
     client_id = app.config['CLIENT_ID']
